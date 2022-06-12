@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+    <title>Clean Up the Beach!</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+
+        <section class="showcase">
+
+            <div class="about-content">
+                <header>
+                    <h2 class="logo outline">Clean Up the Beach!</h2>
+                    <div id="menu" class="dropdown">
+                        <a href="javascript: void(0)" class="close-menu-btn" onclick="closeMenu()">
+                            <img src="images/close.png">
+                        </a>
+                        <div class="dropdown-list">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="engage.html">Engage</a>
+                            <a href="play.html">Play</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <span class="hamburger" onclick="openMenu()"><img src="images/menu.png"></span>
+        
+                </header>
+
+                <div id="about-container" class="about-container">
+                    
+                    <h3 class="topic-header">What Is A Beach Clean-up?</h3>
+
+                    <p>There is almost nothing better than the bliss of a walk along the beach, 
+                        feeling the salty breath of the sea breeze on your face, the sunshine 
+                        warming your back and the soft sand filtering between your toes. But, 
+                        there is also almost nothing worse than witnessing the beauty of the beach spoiled 
+                        by human waste – especially plastic pollution! The beach is a place of relaxation.</p>
+
+                    <h3 class="topic-header">Why Beach Clean-ups?</h3>
+                    
+                    <p>One of the major benefits of organizing a beach clean-up is that it brings people 
+                        face-to-face with the reality of plastic pollution. While this is a hot topic 
+                        at the moment, many people are unlikely to change their behavior until they understand
+                        the scope of the plastic pollution and see the impact it has on the environment. 
+                        To many people, plastic (especially single-use plastic) is an out of sight, out of mind 
+                        type of problem, once it is in the bin – it is not their problem anymore. But all that 
+                        waste has to go somewhere (since it doesn’t biodegrade) and it often ends up in the ocean
+                        and, subsequently, ends up washing up on shore.</p>
+                    
+                        <p>By organizing a beach clean-up, volunteers are able to physically see the quantity of 
+                        plastic littering the beach and have a greater understanding of the effort required to 
+                        remove plastic from the marine system – having had to pick up the trash themselves. 
+                        Seeing this problem first-hand is likely to encourage volunteers to assess plastic 
+                        usage in their own community, and therefore consider modifying their own behavior. 
+                        By being aware of the problem, volunteers can then raise awareness of plastic pollution
+                        by discussing the issue among friends, family, schoolmates and colleagues, and encouraging 
+                        them to modify their behavior as well.</p>
+                        <br>
+                </div>
+
+                <center><canvas id="canvas" width="785" height="387"></canvas></center>
+                <div class="subtitle">Mouse over image above to reveal how the beach looks after a cleanup</div>
+    
+            </div>  
+
+            <div class="intro">
+            <div class="slider"></div>
+
+        </section>
+
+
+        <!--
+        <section class="showcase">
+            <div class="background"></div>
+
+            <div class="engage-content">
+                <header>
+                    <h2 class="logo outline">Clean Up the Beach!</h2>
+                    <div id="menu" class="dropdown">
+                        <a href="javascript: void(0)" class="close-menu-btn" onclick="closeMenu()">
+                            <img src="images/close.png">
+                        </a>
+                        <div class="dropdown-list">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="engage.html">Engage</a>
+                            <a href="play.html">Play</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <span class="hamburger" onclick="openMenu()"><img src="images/menu.png"></span>
+        
+                </header>
+
+                <div id="engage-container" class="engage-container">
+                    <div id="formatted-address"></div>
+                </div>
+            </div>    
+
+
+            <div class="intro">
+            <div class="slider"></div>
+
+        </section>
+
+    -->
+
+    </main>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

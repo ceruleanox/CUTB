@@ -52,6 +52,15 @@ header .logo
 }
 */
 
+
+p {
+    margin-top: 12px;
+}
+
+.topic-header {
+    margin-top: 18px;
+}
+
 .showcase
 {
     position: absolute;
@@ -62,7 +71,7 @@ header .logo
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #111111;
+    background: rgba(195, 178, 128, .5);
     transition: 0.5s;
     z-index: 2;
 }
@@ -91,8 +100,20 @@ header .logo
     left: 0;
     width: 100%;
     height: 100%;
-    background: #332616;    /*#303032;*/
+    background: #221505;    /*#303032;*/
     mix-blend-mode: overlay;
+}
+
+
+.outline {
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        1px 1px 0 #000,
+      -.33px -.33px 0 #000,  
+       .33px -.33px 0 #000,
+       -.33px .33px 0 #000,
+        .33px .33px 0 #000;
 }
 
 .text
@@ -345,6 +366,46 @@ span .hamburger,
 }
 
 /*************************************/
+/* about page */
+/*************************************/
+
+.subtitle {
+    font-size: 2.5vh;
+    padding: 30px;
+    text-align: center;
+    display: block;
+}
+
+/*************************************/
+/* engage page */
+/*************************************/
+
+.engage-btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: #2e5988;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.engage-btn:hover {
+    background-color: #2e5988;
+    color: #fff;
+}
+
+#map { 
+    height: 300px; 
+    padding: 30px;
+}
+
+
+/*************************************/
 /* contact page */
 /*************************************/
 
@@ -359,7 +420,7 @@ textarea {
     font-family: "Poppins", sans-serif;
 }
 
-.contact-container{
+.contact-container {
     position: absolute;
     top: 0px;
     width: 100%;
